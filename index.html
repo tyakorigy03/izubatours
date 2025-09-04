@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rwanda Adventure Guide |izuba tour's campany</title>
+    <meta name="google-site-verification" content="lnM5CdeEeTUcocFJ8Vf3JKEbE74YDugrxTU0bpf68so" />
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Explore Rwanda with izuba tours (aka Fils) – an experienced local tour guide offering unforgettable adventure tours, nature hikes, and cultural experiences.">
+    <meta name="keywords" content="Rwanda tours, izuba tours, Fils tour guide, Rwanda adventure, Kigali tour guide, Volcanoes National Park, Gorilla trekking, Rwanda safari, Rwandan culture tours">
+    <meta name="author" content="tyakorigy">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Rwanda Adventure Guide | izuba tours's Tours">
+    <meta property="og:description" content="Join izuba tours (aka Fils) on thrilling adventure tours across Rwanda. Discover nature, culture, and unforgettable experiences.">
+    <meta property="og:image" content="https://img.freepik.com/free-photo/waterfall-middle-cliffs-with-trees-plants-sunny-day_181624-2315.jpg">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Rwanda Adventure Guide | izuba tours's Tours">
+    <meta name="twitter:description" content="Follow izuba tours (aka Fils) for amazing guided tours through Rwanda’s top destinations, wildlife, and landscapes.">
+    <meta name="twitter:image" content="https://img.freepik.com/free-photo/waterfall-middle-cliffs-with-trees-plants-sunny-day_181624-2315.jpg">
+
+    <!-- Tailwind CSS and Font Awesome -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom Styles -->
+    <style>
+     
+        .tour-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .gallery-item:hover {
+            transform: scale(1.03);
+        }
+        .social-icon:hover {
+            transform: scale(1.2);
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        .floating {
+            animation: float 3s ease-in-out infinite;
+        }
+    </style>
+    
+</head>
+
+<body class="font-sans bg-gray-50">
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <div>
+                    <a href="#" class="text-2xl font-bold text-gray-800">izuba tour's<span class="text-blue-500">Company</span></a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-800 hover:text-blue-500">Home</a>
+                    <a href="#about" class="text-gray-800 hover:text-blue-500">About</a>
+                    <a href="#tours" class="text-gray-800 hover:text-blue-500">Tours</a>
+                    <a href="#gallery" class="text-gray-800 hover:text-blue-500">Gallery</a>
+                    <a href="#contact" class="text-gray-800 hover:text-blue-500">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-gray-800 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden py-4">
+                <a href="#home" class="block py-2 text-gray-800 hover:text-blue-500">Home</a>
+                <a href="#about" class="block py-2 text-gray-800 hover:text-blue-500">About</a>
+                <a href="#tours" class="block py-2 text-gray-800 hover:text-blue-500">Tours</a>
+                <a href="#gallery" class="block py-2 text-gray-800 hover:text-blue-500">Gallery</a>
+                <a href="#contact" class="block py-2 text-gray-800 hover:text-blue-500">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+<style>
+  /* Slideshow effect */
+  .slideshow {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .slideshow::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.75));
+    z-index: 1;
+  }
+
+  .slideshow img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: slideShow 18s infinite;
+    opacity: 0;
+  }
+
+  .slideshow img:nth-child(1) { animation-delay: 0s; }
+  .slideshow img:nth-child(2) { animation-delay: 6s; }
+  .slideshow img:nth-child(3) { animation-delay: 12s; }
+
+  @keyframes slideShow {
+    0% { opacity: 0; }
+    8% { opacity: 1; }
+    33% { opacity: 1; }
+    41% { opacity: 0; }
+    100% { opacity: 0; }
+  }
+</style>
+
+<section id="home" class="relative slideshow h-screen flex items-center justify-center text-center text-white">
+  <!-- Background Slideshow -->
+  <img src="images/WhatsApp Image 2025-09-04 at 12.40.20_60a18d36.jpg" alt="Rwanda Gorillas">
+  <img src="images/WhatsApp Image 2025-09-04 at 12.40.16_543f6106.jpg" alt="Rwanda Landscape">
+  <img src="images/WhatsApp Image 2025-09-04 at 12.40.17_63c6bc26.jpg" alt="Rwanda Lake">
+
+  <!-- Overlay Content -->
+  <div class="relative z-10 max-w-3xl px-6">
+    <h1 class="text-4xl md:text-6xl font-bold mb-6 drop-shadow-lg">
+      Discover The Heart of Africa: Rwanda
+    </h1>
+    <p class="text-lg md:text-2xl mb-8 leading-relaxed drop-shadow-md">
+      Muraho! We are Izuba Tours, your local expert with 10+ years of experience, ready to guide you through Rwanda's breathtaking landscapes and vibrant culture.
+    </p>
+    <div class="flex flex-col sm:flex-row justify-center gap-4">
+      <a href="#tours" class="bg-blue-600 hover:bg-blue-700 px-8 py-3 rounded-full text-lg font-semibold transition duration-300">
+        View Tours
+      </a>
+      <a href="#contact" class="bg-transparent border-2 border-white hover:bg-white hover:text-gray-900 px-8 py-3 rounded-full text-lg font-semibold transition duration-300">
+        Contact Izuba Tours
+      </a>
+    </div>
+  </div>
+</section>
+
+
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">About <span class="text-blue-500">izuba tour's campany</span></h2>
+                <div class="w-20 h-1 bg-blue-500 mx-auto"></div>
+            </div>
+            <div class="flex flex-col md:flex-row items-center gap-10">
+                <div class="w-full md:w-1/2">
+                    <div class="relative">
+                        <img src="images/WhatsApp Image 2025-09-04 at 12.40.20_e96be4d8.jpg" class="rounded-md">
+                        <div class="absolute -bottom-5 -right-5 bg-blue-500 text-white p-4 rounded-lg shadow-lg floating">
+                            <p class="font-bold text-xl">3+ Years</p>
+                            <p class="text-sm">Guiding in Rwanda</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Your Expert Rwandan Adventure Guide</h3>
+                    <p class="text-gray-600 mb-6">Muraho! we are izuba tours, and Rwanda is my home. For over a decade, I've had the privilege of sharing the wonders of this incredible country with travelers from all over the world. My journey began with a deep love for Rwanda's natural beauty and its rich history, and I've been dedicated to offering authentic, unforgettable experiences ever since.</p>
+                    <p class="text-gray-600 mb-6">My tours are designed to take you beyond the ordinary, offering sustainable and immersive encounters with Rwanda's unique wildlife, stunning landscapes, and vibrant communities. Let's explore the Land of a Thousand Hills together!</p>
+                    <div class="grid grid-cols-2 gap-4 mb-6">
+                        <div class="flex items-center">
+                            <i class="fas fa-paw text-blue-500 mr-2 text-xl"></i>
+                            <span class="text-gray-700">Gorilla Trekking</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-water text-blue-500 mr-2 text-xl"></i>
+                            <span class="text-gray-700">Lake Kivu Adventures</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-tree text-blue-500 mr-2 text-xl"></i>
+                            <span class="text-gray-700">Nyungwe Forest Treks</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-hands-helping text-blue-500 mr-2 text-xl"></i>
+                            <span class="text-gray-700">Cultural Immersion</span>
+                        </div>
+                    </div>
+                    <div class="flex space-x-4">
+                        <a href="https://www.facebook.com/fiston.heliksen" class="social-icon bg-blue-600 text-white p-3 rounded-full hover:bg-blue-700 transition duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon bg-pink-600 text-white p-3 rounded-full hover:bg-pink-700 transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon bg-red-600 text-white p-3 rounded-full hover:bg-red-700 transition duration-300">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="tours" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">izuba tours's <span class="text-blue-500">Rwanda Tours</span></h2>
+                <div class="w-20 h-1 bg-blue-500 mx-auto"></div>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Embark on an unforgettable journey through Rwanda with my curated tours. Each experience is crafted to show you the true essence of this beautiful country.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="tour-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="https://img.freepik.com/free-photo/mountain-gorillas-gorilla-beringei-beringei_475641-51.jpg?ga=GA1.1.613465115.1749487273&semt=ais_items_boosted&w=740" alt="Gorilla Trekking" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-blue-500 font-semibold">3 Days</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">MUST-DO</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Gorilla Trekking Expedition</h3>
+                        <p class="text-gray-600 mb-4">A once-in-a-lifetime encounter with the majestic mountain gorillas in Volcanoes National Park.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-gray-800">Starting from $2,000</span>
+                           
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tour-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="https://img.freepik.com/free-photo/beautiful-ramboda-waterfall-sri-lanka-island_167946-169.jpg?ga=GA1.1.613465115.1749487273&semt=ais_items_boosted&w=740" alt="Chimpanzee Tracking" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-blue-500 font-semibold">4 Days</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">WILDLIFE</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Nyungwe Chimpanzee Trek</h3>
+                        <p class="text-gray-600 mb-4">Discover the rich biodiversity of Nyungwe Forest, home to chimpanzees and 13 other primate species.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-gray-800">Starting from $1,200</span>
+                           
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tour-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="https://img.freepik.com/free-photo/tower-giraffes-gathered-around-bushes-open-woodlan_181624-40637.jpg?ga=GA1.1.613465115.1749487273&semt=ais_items_boosted&w=740" alt="Akagera Safari" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-blue-500 font-semibold">5 Days</span>
+                            <span class="bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded-full">DIVERSE</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Akagera Safari & Lake Kivu Escape</h3>
+                        <p class="text-gray-600 mb-4">Experience a thrilling safari in Akagera and unwind by the serene shores of Lake Kivu.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-gray-800">Starting from $1,500</span>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white px-8 py-3 rounded-full text-lg font-semibold transition duration-300">View All Rwanda Tours</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Rwanda Adventure <span class="text-blue-500">Gallery</span></h2>
+                <div class="w-20 h-1 bg-blue-500 mx-auto"></div>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">A glimpse into the unforgettable moments captured during my tours across Rwanda.</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <div class="gallery-item overflow-hidden rounded-lg shadow-md transition duration-300">
+                    <img src="https://i.pinimg.com/736x/07/7f/db/077fdb08f44cf1f00487adcf4e05bc62.jpg" alt="Gorilla in mist" class="w-full h-64 object-cover hover:opacity-90 transition duration-300">
+                </div>
+                <div class="gallery-item overflow-hidden rounded-lg shadow-md transition duration-300">
+                    <img src="https://i.pinimg.com/736x/ad/6f/cc/ad6fcc6b964d51d32fb7b1d34ba5ebb0.jpg" alt="Tea Plantation" class="w-full h-64 object-cover hover:opacity-90 transition duration-300">
+                </div>
+                <div class="gallery-item overflow-hidden rounded-lg shadow-md transition duration-300">
+                    <img src="https://i.pinimg.com/736x/ad/a5/95/ada595077ab15fd4f26d15b8c35465f8.jpg" alt="Kigali City View" class="w-full h-64 object-cover hover:opacity-90 transition duration-300">
+                </div>
+                <div class="gallery-item overflow-hidden rounded-lg shadow-md transition duration-300">
+                    <img src="https://i.pinimg.com/736x/8c/72/43/8c724321c3b0278acc5b746adb5d7995.jpg" alt="Chimpanzee in forest" class="w-full h-64 object-cover hover:opacity-90 transition duration-300">
+                </div>
+                <div class="gallery-item overflow-hidden rounded-lg shadow-md transition duration-300">
+                    <img src="https://i.pinimg.com/736x/2a/ea/de/2aeade995179dde4b325f74d425406ca.jpg" alt="Akagera wildlife" class="w-full h-64 object-cover hover:opacity-90 transition duration-300">
+                </div>
+                <div class="gallery-item overflow-hidden rounded-lg shadow-md transition duration-300">
+                    <img src="https://i.pinimg.com/736x/2b/aa/0f/2baa0f0b1c59deec862d2a8a6b300ae8.jpg" alt="Lake Kivu Sunset" class="w-full h-64 object-cover hover:opacity-90 transition duration-300">
+                </div>
+                <div class="gallery-item overflow-hidden rounded-lg shadow-md transition duration-300">
+                    <img src="https://i.pinimg.com/736x/0a/d6/b7/0ad6b7b6696cf15ba1f6d7ae5efd6503.jpg" alt="Cultural Dance" class="w-full h-64 object-cover hover:opacity-90 transition duration-300">
+                </div>
+                <div class="gallery-item overflow-hidden rounded-lg shadow-md transition duration-300">
+                    <img src="https://i.pinimg.com/736x/0a/d6/b7/0ad6b7b6696cf15ba1f6d7ae5efd6503.jpg" alt="Intore Dancers" class="w-full h-64 object-cover hover:opacity-90 transition duration-300">
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="#" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
+                    <span>View More on Instagram</span>
+                    <i class="fab fa-instagram ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-blue-600 text-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row">
+                <div class="w-full md:w-1/2 mb-10 md:mb-0 md:pr-8">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Explore <span class="text-blue-200">Rwanda with izuba tours?</span></h2>
+                    <p class="text-lg mb-6 text-blue-100">Let's plan your perfect Rwandan adventure. Reach out to me directly, and we'll craft a journey just for you!</p>
+                    <div class="space-y-4">
+                      <div class="flex items-center">
+  <i class="fas fa-phone-alt mr-4 text-xl text-blue-300"></i>
+  <a href="tel:+250792607900" class="hover:underline">+250 792607900</a>
+</div>
+
+<div class="flex items-center">
+  <i class="fas fa-envelope mr-4 text-xl text-blue-300"></i>
+  <a href="mailto:izubatours@gmail.com" class="hover:underline">izubatours@gmail.com</a>
+</div>
+
+<div class="flex items-center">
+  <i class="fas fa-map-marker-alt mr-4 text-xl text-blue-300"></i>
+  <a href="https://www.google.com/maps?q=Kigali,+Rwanda" target="_blank" class="hover:underline">
+    Based in Kigali, Rwanda
+  </a>
+</div>
+
+                    </div>
+                    <div class="mt-8">
+                        <h3 class="text-xl font-semibold mb-4">Follow My Rwandan Adventures</h3>
+                        <div class="flex space-x-4">
+                            <a href="https://www.facebook.com/fiston.heliksen" class="social-icon bg-blue-500 text-white p-3 rounded-full hover:bg-blue-400 transition duration-300">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-icon bg-blue-500 text-white p-3 rounded-full hover:bg-blue-400 transition duration-300">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-icon bg-blue-500 text-white p-3 rounded-full hover:bg-blue-400 transition duration-300">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2">
+                 <form id="tourForm" class="bg-white rounded-lg shadow-lg p-8 text-gray-800">
+  <h3 class="text-2xl font-bold text-gray-800 mb-6">Inquire About Your Tour</h3>
+
+  <div class="mb-4">
+    <label class="block text-gray-700 mb-2" for="name">Full Name</label>
+    <input type="text" id="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Your Name">
+  </div>
+
+  <div class="mb-4">
+    <label class="block text-gray-700 mb-2" for="email">Email</label>
+    <input type="email" id="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="your.email@example.com">
+  </div>
+
+  <div class="mb-4">
+    <label class="block text-gray-700 mb-2" for="tour">Interested Tour</label>
+    <select id="tour" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+      <option value="">Select a Rwandan Tour</option>
+      <option value="gorilla">Gorilla Trekking Expedition</option>
+      <option value="chimpanzee">Nyungwe Chimpanzee Trek</option>
+      <option value="akagera">Akagera Safari & Lake Kivu Escape</option>
+      <option value="cultural">Cultural Immersion & Kigali City</option>
+      <option value="custom">Custom Rwanda Adventure</option>
+    </select>
+  </div>
+
+  <div class="mb-4">
+    <label class="block text-gray-700 mb-2" for="message">Your Message</label>
+    <textarea id="message" rows="4" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Tell me about your dream Rwandan adventure..."></textarea>
+  </div>
+
+  <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg transition duration-300">
+    Send Message to Izuba Tours
+  </button>
+</form>
+
+<script>
+  document.getElementById("tourForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const tour = document.getElementById("tour").value;
+    const message = document.getElementById("message").value;
+
+    const subject = encodeURIComponent("New Tour Inquiry from " + name);
+    const body = encodeURIComponent(
+      "Name: " + name + "\n" +
+      "Email: " + email + "\n" +
+      "Tour: " + tour + "\n\n" +
+      "Message:\n" + message
+    );
+
+    window.location.href = "mailto:izubatours@gmail.com?subject=" + subject + "&body=" + body;
+  });
+</script>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-8 md:mb-0">
+                    <h3 class="text-2xl font-bold mb-4">izuba tour's<span class="text-blue-400">Company</span></h3>
+                    <p class="text-gray-400 max-w-md">Your dedicated guide for unforgettable and authentic adventures across the stunning landscapes of Rwanda.</p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#home" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                            <li><a href="#about" class="text-gray-400 hover:text-white transition duration-300">About</a></li>
+                            <li><a href="#tours" class="text-gray-400 hover:text-white transition duration-300">Tours</a></li>
+                            <li><a href="#gallery" class="text-gray-400 hover:text-white transition duration-300">Gallery</a></li>
+                            <li><a href="#contact" class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">My Tours</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Gorilla Treks</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Chimpanzee Tracking</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Safari & Lake Kivu</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Cultural & City Tours</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Custom Rwanda Adventures</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Connect</h4>
+                        <div class="flex space-x-4">
+                            <a href="https://www.facebook.com/fiston.heliksen" class="social-icon bg-gray-700 text-white p-3 rounded-full hover:bg-blue-600 transition duration-300">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-icon bg-gray-700 text-white p-3 rounded-full hover:bg-pink-600 transition duration-300">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-icon bg-gray-700 text-white p-3 rounded-full hover:bg-red-600 transition duration-300">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
+                <p>© 2025 izuba tour's company Adventures. All rights reserved. | Crafted with love for the Land of a Thousand Hills</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                // Close mobile menu after clicking a link
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+
+        // Form submission handling
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! izuba tours will get back to you shortly to plan your Rwandan adventure.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
